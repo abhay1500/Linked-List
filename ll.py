@@ -115,6 +115,7 @@ if __name__=='__main__':
     ll.insert_at_begnning(30)
     ll.insert_at_begnning(40)
     ll.del_begining()"""
+    #ll.del_by_value(20)
     ll.del_end()
     #ll.before_node(1,200)
     ll.print_ll()
