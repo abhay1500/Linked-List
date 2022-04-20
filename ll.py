@@ -86,6 +86,23 @@ class linkedlist: #ye nodes ko connect krta hai
             z=n.next.data
             n.next=None
             print("The last deleted data is:",z)
+     def del_by_value(self,x):
+        if self.head==None:
+            print("can't delete the element ,linked list is empty.")
+            return
+        if x==self.head.data:
+            self.head=self.head.next
+            return
+        n=self.head
+        while(n.next!=None):
+            if x==n.next.data:
+                break
+            n=n.next
+        if n.next==None:
+            print("note is not present.")
+        else:
+            n.next=n.next.next
+        print("The delted node is:",x)
               
 
           
